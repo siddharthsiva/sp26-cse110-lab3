@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="white" stroke="black" />
+  <text x="320" y="40" font-size="28" text-anchor="middle" fill="black">Pomodoro Timer Brainstorm</text>
+
+  <rect x="40" y="110" width="160" height="80" fill="white" stroke="black" />
+  <text x="120" y="155" font-size="22" text-anchor="middle" fill="black">Start Session</text>
+
+  <rect x="240" y="110" width="160" height="80" fill="white" stroke="black" />
+  <text x="320" y="155" font-size="22" text-anchor="middle" fill="black">Focus Timer</text>
+
+  <rect x="440" y="110" width="160" height="80" fill="white" stroke="black" />
+  <text x="520" y="155" font-size="22" text-anchor="middle" fill="black">Short Break</text>
+
+  <line x1="200" y1="150" x2="240" y2="150" stroke="black" stroke-width="3" />
+  <line x1="400" y1="150" x2="440" y2="150" stroke="black" stroke-width="3" />
+
+  <rect x="200" y="250" width="240" height="70" fill="white" stroke="black" />
+  <text x="320" y="292" font-size="22" text-anchor="middle" fill="black">Task Labels + History</text>
+</svg>

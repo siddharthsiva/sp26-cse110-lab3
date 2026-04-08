@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta
+			name="description"
+			content="Meeting minutes for a sample CSE 110 team brainstorming session."
+		>
+		<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+		<title>Pomodoro Timer First Brainstorm</title>
+	</head>
+	<body>
+		<header>
+			<h1>Pomodoro Timer First Brainstorm</h1>
+			<p>
+				<b>Meeting topic:</b> Brainstorming and early project planning<br>
+				<b>Date:</b> April 7, 2026
+			</p>
+			<nav>
+				<ul>
+					<li><a href="#attendance">Attendance</a></li>
+					<li><a href="#agenda">Agenda</a></li>
+					<li><a href="#unfinished">Unfinished Business</a></li>
+					<li><a href="#new-business">New Business</a></li>
+					<li><a href="#media">Media</a></li>
+					<li><a href="#feedback-form">Feedback Form</a></li>
+				</ul>
+			</nav>
+			<hr>
+		</header>
+
+		<main>
+			<section id="attendance">
+				<h2>Attendance</h2>
+				<p>
+					Everyone joined on time and the group agreed that a
+					<strong>shared timer workflow</strong> is the highest-priority feature.
+				</p>
+				<div>
+					<span>Present team members:</span>
+					<ul>
+						<li>Avery</li>
+						<li>Elaine</li>
+						<li>Shravi</li>
+						<li>Sofia</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="agenda">
+				<h2>Agenda</h2>
+				<h3>What We Planned To Cover</h3>
+				<ol>
+					<li>Choose a core product idea for the quarter.</li>
+					<li>List must-have features for the first prototype.</li>
+					<li>Assign rough ownership for research and documentation.</li>
+				</ol>
+				<p>
+					The team wants a timer app that feels simple, but <em>not</em> limited.
+					A lightweight focus mode was preferred over a feature-heavy dashboard.
+				</p>
+			</section>
+
+			<section id="unfinished">
+				<h2>Unfinished Business</h2>
+				<p>
+					Last meeting's open item was whether we should build for desktop first or
+					mobile first. That decision is still pending because we need one more round
+					of user research.
+				</p>
+				<ul>
+					<li>Compare desktop and mobile usage expectations.</li>
+					<li>Collect examples from other study-productivity apps.</li>
+				</ul>
+			</section>
+
+			<section id="new-business">
+				<h2>New Business</h2>
+				<p>
+					The group proposed a pomodoro workflow with task labels, short breaks,
+					and a simple session history. One suggestion was to keep an <i>icebox</i>
+					list for stretch features.
+				</p>
+				<ul>
+					<li>Prototype a start, pause, and reset timer flow.</li>
+					<li>Decide whether task labels should be optional.</li>
+					<li>Prepare a README outline for future setup instructions.</li>
+				</ul>
+
+				<details>
+					<summary>Miscellaneous comments, questions, and concerns</summary>
+					<p>
+						One concern was balancing a clean interface with useful reporting.
+						Another comment was that the first version should avoid overcommitting
+						to analytics before the core timer experience feels solid.
+					</p>
+					<p>
+						For inspiration, the team reviewed
+						<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer">
+							MDN's HTML documentation
+						</a>
+						and agreed to keep the project structure easy to read.
+					</p>
+				</details>
+			</section>
+
+			<section id="media">
+				<h2>Meeting Media</h2>
+				<h3>Whiteboard Diagram</h3>
+				<img
+					src="assets/brainstorm-diagram.svg"
+					alt="A simple brainstorming diagram showing timer flow, break cycle, and task tracking."
+				>
+
+				<h3>Audio Recording</h3>
+				<audio controls>
+					<source src="assets/audio1464205770.m4a" type="audio/mp4">
+					Your browser does not support the audio element.
+				</audio>
+
+				<h3>Video Recording</h3>
+				<video controls width="480">
+					<source src="assets/video1464205770.mp4" type="video/mp4">
+					Your browser does not support the video element.
+				</video>
+			</section>
+
+			<section id="feedback-form">
+				<h2>Quick Team Feedback Form</h2>
+				<p>
+					This form is intentionally non-functional for the lab, but it includes the
+					required HTML form controls.
+				</p>
+				<form>
+					<fieldset>
+						<legend>Meeting Check-In</legend>
+
+						<p>
+							<label for="member-name">Name:</label>
+							<input id="member-name" name="member-name" type="text" list="team-members">
+						</p>
+
+						<datalist id="team-members">
+							<option value="Avery"></option>
+							<option value="Elaine"></option>
+							<option value="Shravi"></option>
+							<option value="Sofia"></option>
+						</datalist>
+
+						<p>
+							<label for="next-meeting-date">Preferred next meeting date:</label>
+							<input id="next-meeting-date" name="next-meeting-date" type="date">
+						</p>
+
+						<p>Which part of the project seems most urgent?</p>
+						<p>
+							<input id="priority-timer" name="priority" type="radio" value="timer">
+							<label for="priority-timer">Timer controls</label>
+						</p>
+						<p>
+							<input id="priority-ui" name="priority" type="radio" value="ui">
+							<label for="priority-ui">Interface planning</label>
+						</p>
+
+						<p>What follow-up tasks can you help with?</p>
+						<p>
+							<input id="task-research" name="task-research" type="checkbox">
+							<label for="task-research">User research</label>
+						</p>
+						<p>
+							<input id="task-docs" name="task-docs" type="checkbox">
+							<label for="task-docs">Documentation</label>
+						</p>
+
+						<p>
+							<label for="focus-area">Choose a focus area:</label>
+							<select id="focus-area" name="focus-area">
+								<option value="">Select one</option>
+								<option value="core-flow">Core timer flow</option>
+								<option value="planning">Planning</option>
+								<option value="testing">Testing ideas</option>
+							</select>
+						</p>
+
+						<p>
+							<label for="notes">Additional notes:</label><br>
+							<textarea id="notes" name="notes" rows="5" cols="40">I think the first prototype should stay minimal.</textarea>
+						</p>
+
+						<button type="submit">Submit Notes</button>
+					</fieldset>
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<hr>
+			<p>
+				<strong>Summary:</strong> The team aligned on a pomodoro timer concept and
+				left mobile-versus-desktop targeting open for one more round of research.
+			</p>
+			<p>
+				Prepared for CSE 110 Lab 2.<br>
+				Repository assets are expected in the assets folder.
+			</p>
+		</footer>
+	</body>
+</html>
