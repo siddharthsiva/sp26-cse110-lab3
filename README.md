@@ -1,12 +1,6 @@
-# Lab 2 - Starter
+# Lab 3 - Github Pages
 
 Published site URL:
 
-https://siddharthsiva.github.io/Lab2_Starter/
+https://siddharthsiva.github.io/sp26-cse110-lab3/
 
-Media files included in the assets folder:
-
-- `audio1464205770.m4a`
-- `video1464205770.mp4`
-
-The W3 validator screenshot should be stored in the `screenshots` directory.

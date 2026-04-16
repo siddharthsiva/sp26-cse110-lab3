@@ -7,82 +7,111 @@
 			name="description"
 			content="Meeting minutes for a sample CSE 110 team brainstorming session."
 		>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+			rel="stylesheet"
+		>
 		<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+		<link rel="stylesheet" href="styles.css">
 		<title>Pomodoro Timer First Brainstorm</title>
+		<style>
+			.eyebrow {
+				letter-spacing: 0.08cm;
+				text-transform: uppercase;
+			}
+
+			.summary-note {
+				span {
+					color: #4338ca;
+					color: color(display-p3 0.3 0.36 0.82 / 0.95);
+				}
+			}
+		</style>
 	</head>
-	<body>
-		<header>
+	<body class="page-shell">
+		<a class="back-to-top" href="#top">Top</a>
+		<header class="hero" id="top">
+			<p class="eyebrow" style="background-color: rgba(255, 255, 255, 0.5);">Sprint planning notes</p>
 			<h1>Pomodoro Timer First Brainstorm</h1>
-			<p>
+			<p class="meeting-meta">
 				<b>Meeting topic:</b> Brainstorming and early project planning<br>
 				<b>Date:</b> April 7, 2026
 			</p>
-			<nav>
-				<ul>
+			<nav class="site-nav" aria-label="Section links">
+				<ul class="nav-list">
 					<li><a href="#attendance">Attendance</a></li>
 					<li><a href="#agenda">Agenda</a></li>
-					<li><a href="#unfinished">Unfinished Business</a></li>
+					<li><a href="#unfinished">Unfinished</a></li>
 					<li><a href="#new-business">New Business</a></li>
 					<li><a href="#media">Media</a></li>
-					<li><a href="#feedback-form">Feedback Form</a></li>
+					<li><a href="#feedback-form">Feedback</a></li>
 				</ul>
 			</nav>
-			<hr>
+			<p class="hero-note" hidden>This note is hidden for layout testing.</p>
 		</header>
 
-		<main>
-			<section id="attendance">
+		<main class="content-wrap">
+			<section id="attendance" class="card section-card">
 				<h2>Attendance</h2>
 				<p>
 					Everyone joined on time and the group agreed that a
 					<strong>shared timer workflow</strong> is the highest-priority feature.
 				</p>
-				<div>
-					<span>Present team members:</span>
-					<ul>
-						<li>Avery</li>
-						<li>Elaine</li>
-						<li>Shravi</li>
-						<li>Sofia</li>
-					</ul>
+				<div class="team-strip">
+					<div class="member-chip">Avery</div>
+					<div class="member-chip">Elaine</div>
+					<div class="member-chip">Shravi</div>
+					<div class="member-chip">Sofia</div>
 				</div>
 			</section>
 
-			<section id="agenda">
+			<section id="agenda" class="card section-card">
 				<h2>Agenda</h2>
-				<h3>What We Planned To Cover</h3>
-				<ol>
-					<li>Choose a core product idea for the quarter.</li>
-					<li>List must-have features for the first prototype.</li>
-					<li>Assign rough ownership for research and documentation.</li>
-				</ol>
-				<p>
-					The team wants a timer app that feels simple, but <em>not</em> limited.
-					A lightweight focus mode was preferred over a feature-heavy dashboard.
-				</p>
+				<p>These were the priorities chosen for the team's first sprint.</p>
+				<div class="agenda-grid">
+					<article class="grid-item agenda-item">
+						<h3>Product Goal</h3>
+						<p>Choose a clear, approachable timer experience for students.</p>
+					</article>
+					<article class="grid-item agenda-item">
+						<h3>MVP Features</h3>
+						<p>Start, pause, reset, and short-break support were all approved.</p>
+					</article>
+					<article class="grid-item agenda-item">
+						<h3>Ownership</h3>
+						<p>Research, docs, and wireframes were divided across the group.</p>
+					</article>
+					<article class="grid-item agenda-item">
+						<h3>Next Checkpoint</h3>
+						<p>The team wants a small prototype ready before the next standup.</p>
+					</article>
+				</div>
 			</section>
 
-			<section id="unfinished">
+			<section id="unfinished" class="card section-card">
 				<h2>Unfinished Business</h2>
 				<p>
 					Last meeting's open item was whether we should build for desktop first or
 					mobile first. That decision is still pending because we need one more round
 					of user research.
 				</p>
-				<ul>
+				<ul class="task-list">
 					<li>Compare desktop and mobile usage expectations.</li>
 					<li>Collect examples from other study-productivity apps.</li>
+					<li>Summarize what should stay in the first release.</li>
 				</ul>
 			</section>
 
-			<section id="new-business">
+			<section id="new-business" class="card section-card highlight-card">
 				<h2>New Business</h2>
 				<p>
 					The group proposed a pomodoro workflow with task labels, short breaks,
 					and a simple session history. One suggestion was to keep an <i>icebox</i>
 					list for stretch features.
 				</p>
-				<ul>
+				<ul class="task-list">
 					<li>Prototype a start, pause, and reset timer flow.</li>
 					<li>Decide whether task labels should be optional.</li>
 					<li>Prepare a README outline for future setup instructions.</li>
@@ -105,40 +134,42 @@
 				</details>
 			</section>
 
-			<section id="media">
+			<section id="media" class="card section-card media-card">
+				<span class="badge">Recorded</span>
 				<h2>Meeting Media</h2>
 				<h3>Whiteboard Diagram</h3>
 				<img
+					class="brainstorm-image"
 					src="assets/brainstorm-diagram.svg"
 					alt="A simple brainstorming diagram showing timer flow, break cycle, and task tracking."
 				>
 
 				<h3>Audio Recording</h3>
-				<audio controls>
+				<audio controls class="media-player">
 					<source src="assets/audio1464205770.m4a" type="audio/mp4">
 					Your browser does not support the audio element.
 				</audio>
 
 				<h3>Video Recording</h3>
-				<video controls width="480">
+				<video controls class="media-player">
 					<source src="assets/video1464205770.mp4" type="video/mp4">
 					Your browser does not support the video element.
 				</video>
 			</section>
 
-			<section id="feedback-form">
+			<section id="feedback-form" class="card section-card form-section">
 				<h2>Quick Team Feedback Form</h2>
 				<p>
 					This form is intentionally non-functional for the lab, but it includes the
 					required HTML form controls.
 				</p>
-				<form>
+				<form class="feedback-form">
 					<fieldset>
 						<legend>Meeting Check-In</legend>
 
 						<p>
 							<label for="member-name">Name:</label>
-							<input id="member-name" name="member-name" type="text" list="team-members">
+							<input id="member-name" name="member-name" type="text" list="team-members" placeholder="Enter your name">
 						</p>
 
 						<datalist id="team-members">
@@ -194,15 +225,14 @@
 			</section>
 		</main>
 
-		<footer>
-			<hr>
-			<p>
-				<strong>Summary:</strong> The team aligned on a pomodoro timer concept and
+		<footer class="site-footer">
+			<p class="summary-note">
+				<strong>Summary:</strong> The team aligned on a <span>pomodoro timer concept</span> and
 				left mobile-versus-desktop targeting open for one more round of research.
 			</p>
 			<p>
-				Prepared for CSE 110 Lab 2.<br>
-				Repository assets are expected in the assets folder.
+				Prepared for CSE 110 Lab 3.<br>
+				Repository assets are stored in the project folders above.
 			</p>
 		</footer>
 	</body>
