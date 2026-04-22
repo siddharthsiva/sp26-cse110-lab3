@@ -22,6 +22,7 @@
 - Anything slowing you down?
 - Do you need feedback or help from anyone?
 
+/* Responsive Styles Start Hereh */
 ## Notes
 - Important decisions
 - Follow-up reminders
